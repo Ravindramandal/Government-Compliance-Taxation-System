@@ -11,7 +11,7 @@ A web-based platform for **IRS officers**, **government consultants**, and **bus
 - Integration with Government Portals & Laws Updates
 
 ### **Tech Stack**
-- **Frontend:** React.js / Angular  
+- **Frontend:** React.js / html / css
 - **Backend:** Django / Spring Boot  
 - **Database:** PostgreSQL / MySQL  
 - **Hosting:** AWS / Google Cloud  
