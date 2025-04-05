@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Compliance & Taxation System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <style>
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+    .hero-slide-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 2;
+    }
+    .carousel-item img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">GovTaxSys</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#about">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">Our Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Tax Filing</a></li>
+            <li><a class="dropdown-item" href="#">Compliance Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">Audit Reports</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="#projects">Our Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="d-none d-lg-block">
+      <a class="btn btn-light text-primary fw-semibold" href="#">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div id="heroCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active position-relative">
+      <img src="KIIT.jpg" class="d-block w-100" alt="Slide 1">
+      <div class="hero-overlay"></div>
+      <div class="hero-slide-content">
+        <h1 class="fw-bold display-5">Government Compliance & Taxation System</h1>
+        <p class="lead">Empowering Government Officers, Consultants, and Businesses.</p>
+        <p>Seamlessly manage taxes, compliance, and audits in one platform.</p>
+        <a href="#" class="btn btn-light px-4">Read More</a>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://images.unsplash.com/photo-1554224154-22dec7ec8818?auto=format&fit=crop&w=1920&h=1080&q=80" class="d-block w-100" alt="Slide 2">
+      <div class="hero-overlay"></div>
+      <div class="hero-slide-content">
+        <h1 class="fw-bold display-5">Modern Compliance Dashboard</h1>
+        <p class="lead">Track real-time filing statuses and automate updates.</p>
+        <p>Stay aligned with all regulatory frameworks.</p>
+        <a href="#" class="btn btn-light px-4">Read More</a>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=1920&h=1080&q=80" class="d-block w-100" alt="Slide 3">
+      <div class="hero-overlay"></div>
+      <div class="hero-slide-content">
+        <h1 class="fw-bold display-5">Intelligent Reporting Tools</h1>
+        <p class="lead">Generate professional audit reports and secure document history.</p>
+        <p>Access everything from a central platform.</p>
+        <a href="#" class="btn btn-light px-4">Read More</a>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<!-- Our Project Section -->
+<section class="py-5 text-white" style="background-color: #1c1c1c;">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">Our Projects</h2>
+    <p class="text-center mb-4" style="max-width: 800px; margin: 0 auto;">
+      Explore our cutting-edge initiatives in taxation, compliance, and digital transformation. From automated tax filing to secure document management, each project highlights our commitment to innovation and government efficiency.
+    </p>
+    <ul class="nav nav-pills justify-content-center mb-4" id="projectTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">All</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="app-tab" data-bs-toggle="pill" data-bs-target="#app" type="button" role="tab">App</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="branding-tab" data-bs-toggle="pill" data-bs-target="#branding" type="button" role="tab">Product Branding</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="books-tab" data-bs-toggle="pill" data-bs-target="#books" type="button" role="tab">Books</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="projectTabContent">
+      <div class="tab-pane fade show active" id="all" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4 align-self-end">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://legaldev.in/assets/img/services/Business-Tax-Filing.webp" class="img-fluid" alt="Project 1">
+              <div class="overlay">
+                <h5>Business Tax Filing</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 align-self-center">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/HJ/SW/HP/94700721/gst-compliance-service-500x500.jpg" class="img-fluid" alt="Project 2">
+              <div class="overlay">
+                <h5>GST Compliance System</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 align-self-start">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://cdn.prod.website-files.com/5f874a02b14267b40a9fd71b/62a8c24b662e7f6faf186d37_hero-document-management-systems-part-1-what-is-a-dms.jpg" class="img-fluid" alt="Project 3">
+              <div class="overlay">
+                <h5>Document Management</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mt-3">
+          <div class="col-md-4 align-self-start">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9" class="img-fluid" alt="Project 4">
+              <div class="overlay">
+                <h5>Tax Consultant Portal</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 align-self-center">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" class="img-fluid" alt="Project 5">
+              <div class="overlay">
+                <h5>Govt Integration</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 align-self-end">
+            <div class="project-card position-relative overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" class="img-fluid" alt="Project 6">
+              <div class="overlay">
+                <h5>Secure Data Access</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tabs for App, Product Branding, Books can follow similar structure -->
+    </div>
+  </div>
+</section>
+<div id="chatbot">
+  <div id="chatbox">
+      <div id="chatlog">
+          <div class="bot-message">Hello! How can I assist you with your taxation and compliance today?</div>
+      </div>
+      <input type="text" id="user-input" placeholder="Ask your question..." />
+      <button id="send-btn">Send</button>
+  </div>
+  <button id="toggle-btn">Ask Us</button>
+</div>
+<!-- Team Section -->
+<section class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="fw-bold mb-5">Meet Our Project Team</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-3 mb-4">
+        <img src="WhatsApp Image 2025-04-05 at 13.50.02_4bfb38d8.jpg" class="img-fluid rounded-circle mb-3 team-img" alt="Team Member 1">
+        <h5 class="fw-semibold">Ravindra Mandal</h5>
+        <p class="text-muted">Project Lead</p>
+        <p class="text-muted">Frontend Developer</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <img src="WhatsApp Image 2025-04-05 at 13.50.28_fe2642af.jpg" class="img-fluid rounded-circle mb-3 team-img" alt="Team Member 2">
+        <h5 class="fw-semibold">Srijan Roy</h5>
+        <p class="text-muted">Backend Developer</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <img src="WhatsApp Image 2025-04-05 at 20.10.24_c523e06a.jpg" class="img-fluid rounded-circle mb-3 team-img" alt="Team Member 3">
+        <h5 class="fw-semibold">Siddhanth Singh</h5>
+        <p class="text-muted">Researcher</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <img src="WhatsApp Image 2025-04-05 at 13.50.29_4b70d8da.jpg" class="img-fluid rounded-circle mb-3 team-img" alt="Team Member 4">
+        <h5 class="fw-semibold">Shayantan Chakrabarti</h5>
+        <p class="text-muted">Advisor</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h2 class="fw-bold mb-4">Get In Touch</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary px-4">Send Message</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-4">Our Location</h2>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.3160477115866!2d85.8170324749362!3d20.35416491048961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a70e0cc7e7e9%3A0x244d97bcdba1c4ff!2sKIIT%20University!5e0!3m2!1sen!2sin!4v1712305537732!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-primary text-white text-center py-4">
+  <div class="container">
+    <p class="mb-1 fw-semibold">Government Compliance & Taxation System</p>
+    <small>&copy; 2025 GovTaxSys. All rights reserved.</small>
+  </div>
+</footer>
+
+
+<!-- About Section -->
+<!-- ... The rest of the content remains unchanged ... -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
